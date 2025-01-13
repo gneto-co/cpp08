@@ -6,11 +6,11 @@
 #    By: gneto-co <gneto-co@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 13:11:28 by tblaase           #+#    #+#              #
-#    Updated: 2025/01/09 10:15:54 by gneto-co         ###   ########.fr        #
+#    Updated: 2025/01/13 12:39:25 by gneto-co         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	iter
+NAME		=	Span
 EX			=	01
 
 CC			=	c++
@@ -32,7 +32,7 @@ UP			=	\033[A
 CUT			=	\033[K
 
 #source files
-SRC_FILES	=	main.cpp
+SRC_FILES	=	main.cpp Span.cpp
 
 OBJ_FILES	=	$(SRC_FILES:.cpp=.o)
 
