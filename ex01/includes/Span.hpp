@@ -25,6 +25,7 @@ public:
 
 	/* methods */
 	void addNumber(int nb);
+	void addNumber(std::vector<int>::iterator start, std::vector<int>::iterator end);
 	int shortestSpan() const;
 	int longestSpan() const;
 

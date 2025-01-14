@@ -30,8 +30,6 @@ void press_any_key()
 int main(int, char **)
 {
 	Span list(5);
-	Span list2(5);
-
 	{
 		MAIN_MSG("add a number")
 		try
@@ -59,7 +57,7 @@ int main(int, char **)
 	SPACER(2)
 
 	{
-		MAIN_MSG("invalid shortest and longest span")
+		MAIN_MSG("valid shortest and longest span")
 		try
 		{
 			PRINT << "Shortest Span: " << list.shortestSpan() << RESEND;
@@ -74,8 +72,36 @@ int main(int, char **)
 	}
 	SPACER(2)
 
+	Span list2(100);
 	{
 		MAIN_MSG("invalid shortest and longest span")
+		try
+		{
+			PRINT << "Shortest Span: " << list2.shortestSpan() << RESEND;
+		}
+		CATCH
+		try
+		{
+			PRINT << "Longest Span: " << list2.longestSpan() << RESEND;
+		}
+		CATCH
+		press_any_key();
+	}
+	SPACER(2)
+
+	{
+		MAIN_MSG("many numbers in one call")
+
+		std::vector<int> vector1;
+		for (int i = 0; i < 100; i++)
+			vector1.push_back(i);
+		
+		try
+		{
+			list2.addNumber(vector1.begin(), vector1.end());
+		}
+		CATCH
+
 		try
 		{
 			PRINT << "Shortest Span: " << list2.shortestSpan() << RESEND;

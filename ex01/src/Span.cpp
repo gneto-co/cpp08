@@ -48,10 +48,17 @@ void Span::addNumber(int nb)
         throw AlreadyFullContainerException();
 }
 
+void	Span::addNumber(std::vector<int>::iterator start, std::vector<int>::iterator end)
+{
+	if (_vec.size() + std::distance(start, end) > _size)
+		throw AlreadyFullContainerException();
+	_vec.insert(_vec.end(), start, end);
+}
+
 int Span::longestSpan() const
 {
     if (_vec.size() <= 1)
-        throw AlreadyFullContainerException();
+        throw NonComparableContainerException();
     std::vector<int> tmp_vec = _vec;
     std::sort(tmp_vec.begin(), tmp_vec.end());
 
@@ -61,7 +68,7 @@ int Span::longestSpan() const
 int Span::shortestSpan() const
 {
     if (_vec.size() <= 1)
-        throw AlreadyFullContainerException();
+        throw NonComparableContainerException();
     std::vector<int> tmp_vec = _vec;
     std::sort(tmp_vec.begin(), tmp_vec.end());
 
