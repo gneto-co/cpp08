@@ -6,10 +6,10 @@
 
 /* SECTION - template funtions */
 
-template <typename Type>
-typename Type::iterator easyfind(Type container, int nb)
+template <typename T>
+typename T::iterator easyfind(T container, int nb)
 {
-    typename Type::iterator it;
+    typename T::iterator it;
 
 	it = std::find(container.begin(), container.end(), nb);
 	if (it == container.end())

@@ -19,6 +19,7 @@ public:
 	Span();
 	Span(unsigned int size);
 	Span(const Span *copy);
+	~Span();
 
 	/* operators */
 	Span &operator=(const Span &src);

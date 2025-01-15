@@ -4,20 +4,26 @@
 
 Span::Span() : _size(1)
 {
-    FT_MSG("Conversion() Constructor")
+    FT_MSG("Span() Constructor")
     return;
 }
 
 Span::Span(unsigned int size) : _size(size)
 {
-    FT_MSG("Conversion(unsigned int) Constructor")
+    FT_MSG("Span(unsigned int) Constructor")
     return;
 }
 
 Span::Span(const Span *copy)
 {
-    FT_MSG("Conversion(Conversion copy) Constructor")
+    FT_MSG("Span(Span copy) Constructor")
     *this = copy;
+    return;
+}
+
+Span::~Span()
+{
+    FT_MSG("Span() Destructor")
     return;
 }
 

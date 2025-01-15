@@ -6,11 +6,11 @@
 #    By: gneto-co <gneto-co@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/23 13:11:28 by tblaase           #+#    #+#              #
-#    Updated: 2025/01/10 11:09:07 by gneto-co         ###   ########.fr        #
+#    Updated: 2025/01/14 15:02:19 by gneto-co         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	Array
+NAME		=	MutantStack
 EX			=	02
 
 CC			=	c++
