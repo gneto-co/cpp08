@@ -34,11 +34,11 @@ int main(int, char **)
 		MAIN_MSG("add a number")
 		try
 		{
-			list.addNumber(-10);
-			list.addNumber(-10);
-			list.addNumber(-20);
-			list.addNumber(-30);
-			list.addNumber(-50);
+			list.addNumber(6);
+			list.addNumber(3);
+			list.addNumber(17);
+			list.addNumber(9);
+			list.addNumber(11);
 		}
 		CATCH
 		press_any_key();
