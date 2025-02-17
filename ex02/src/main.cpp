@@ -120,6 +120,18 @@ int main()
 		SPACER(1)
 	}
 
+	MutantStack<int> mt2(mt);
+	MutantStack<int>::iterator it2_begin = mt2.begin();
+	MutantStack<int>::iterator it2_end = mt2.end();
+	{
+		MAIN_MSG("copy teste")
+
+		print_container(it2_begin, it2_end);
+
+		press_any_key();
+		SPACER(1)
+	}
+
 	return (0);
 }
 
